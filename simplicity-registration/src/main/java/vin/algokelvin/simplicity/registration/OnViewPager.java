@@ -1,4 +1,4 @@
-package com.algokelvin.register.data.utils;
+package vin.algokelvin.simplicity.registration;
 
 public interface OnViewPager {
     void onSetPage(int page);

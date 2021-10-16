@@ -1,2 +1,3 @@
 rootProject.name = "RegisterApps"
 include ':app'
+include ':simplicity-registration'

@@ -9,9 +9,10 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.algokelvin.register.data.R;
-import com.algokelvin.register.data.utils.RegisterController;
 
 import org.jetbrains.annotations.NotNull;
+
+import vin.algokelvin.simplicity.registration.RegisterController;
 
 public class PageTwoFragment extends RegisterController {
 
@@ -27,7 +28,7 @@ public class PageTwoFragment extends RegisterController {
         String[] text = {"Alamat Rumah", "Kota", "No. HP"};
         String[] edtHint = {"Alamat Rumah", "Kota", "No. HP"};
         setSizes(text.length);
-        setUIRegister(view, text, edtHint);
+        setUIRegister(view, text, edtHint, R.id.cl_register_1);
         setBtnNext(R.id.btn_next);
         setBtnBefore(R.id.btn_back);
 
