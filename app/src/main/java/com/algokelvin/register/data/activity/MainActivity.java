@@ -8,7 +8,8 @@ import com.algokelvin.register.data.R;
 import com.algokelvin.register.data.fragment.PageOneFragment;
 import com.algokelvin.register.data.fragment.PageThreeFragment;
 import com.algokelvin.register.data.fragment.PageTwoFragment;
-import com.algokelvin.register.data.utils.TabPageLayer;
+
+import vin.algokelvin.simplicity.registration.TabPageLayer;
 
 public class MainActivity extends TabPageLayer {
 

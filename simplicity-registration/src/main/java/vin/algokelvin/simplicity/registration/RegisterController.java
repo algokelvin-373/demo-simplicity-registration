@@ -1,4 +1,4 @@
-package com.algokelvin.register.data.utils;
+package vin.algokelvin.simplicity.registration;
 
 import android.content.Context;
 import android.content.res.Resources;
@@ -11,8 +11,6 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-
-import com.algokelvin.register.data.R;
 
 import org.jetbrains.annotations.NotNull;
 
@@ -36,9 +34,9 @@ public class RegisterController extends Fragment {
         editTexts = new EditText[sizes];
     }
 
-    public void setUIRegister(View viewLayout, String[] txt, String[] edtHint) {
+    public void setUIRegister(View viewLayout, String[] txt, String[] edtHint, int layoutRegistration) {
         this.viewLayout = viewLayout;
-        setUIInputData(txt, edtHint);
+        setUIInputData(txt, edtHint, layoutRegistration);
     }
 
     public Button getBtnNext() {
@@ -69,13 +67,13 @@ public class RegisterController extends Fragment {
         return onDataPass;
     }
 
-    private void setUIInputData(String[] txt, String[] edtHint) {
+    private void setUIInputData(String[] txt, String[] edtHint, int layoutRegister) {
         LinearLayout.LayoutParams params = new LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT,
                 LinearLayout.LayoutParams.WRAP_CONTENT
         );
         params.setMargins(0, setDp(10), 0, 0);
-        LinearLayout clRegister = viewLayout.findViewById(R.id.cl_register_1);
+        LinearLayout clRegister = viewLayout.findViewById(layoutRegister);
 
         for (int x = 0; x < txt.length; x++) {
             View v = View.inflate(getActivity(), R.layout.include_item_data_register, null);
