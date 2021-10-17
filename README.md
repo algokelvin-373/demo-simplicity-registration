@@ -22,7 +22,7 @@ Coming Soon
 
 #### 1. Add the JitPack repository to your `build.gradle`
 
-```css
+```gradle
 allprojects {
     repositories {
         ...
@@ -32,13 +32,13 @@ allprojects {
   ```
   #### 2. Add Module dependency in your `app/build.gradle`
   
-  ```js
+  ```gradle
   dependencies {
     implementation 'com.github.kelvin373-ht:simplicity-registration:1.0.0'
   }
   ```
   #### 3. Extends class `TabPageLayer` in MainActivity
-  ```js
+  ```java
   public class MainActivity extends TabPageLayer {
 
     @Override
