@@ -1,5 +1,14 @@
-# Demo 'The Simplicity of Registration' [![](https://jitpack.io/v/kelvin373-ht/simplicity-registration.svg)](https://jitpack.io/#kelvin373-ht/simplicity-registration)
-The Simplicity Registration of Android
+<h1 align="center">Demo 'The Simplicity of Registration'</h1>
+
+<p align="center">
+  <a href="https://jitpack.io/#kelvin373-ht/simplicity-registration"><img alt="bintray" src="https://jitpack.io/v/kelvin373-ht/simplicity-registration.svg"></a>
+  <a href="LICENSE"><img alt="License" src="https://img.shields.io/github/license/kelvin373-ht/demo-simplicity-registration"></a>
+  <a href="https://github.com/kelvin373-ht"><img alt="Github" src="https://img.shields.io/github/followers/kelvin373-ht?label=follow&style=social"></a>
+  <a href="https://www.youtube.com/c/AlgoKelvin373/"><img alt="Youtube" src="https://img.shields.io/youtube/channel/views/UCpSHZFRx64xWwXYbWbyXxfw?style=social"></a>
+  <a href="https://www.youtube.com/c/AlgoKelvin373/"><img alt="Youtube" src="https://img.shields.io/youtube/channel/subscribers/UCpSHZFRx64xWwXYbWbyXxfw?style=social"></a>
+</p>
+
+<p align="center">The Simplicity Registration of Android</p>
 
 ## Description
 
