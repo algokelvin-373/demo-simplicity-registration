@@ -37,6 +37,20 @@ allprojects {
     implementation 'com.github.kelvin373-ht:simplicity-registration:1.0.0'
   }
   ```
+  #### 3. Extends class `TabPageLayer` in MainActivity
+  ```
+  public class MainActivity extends TabPageLayer {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        ...
+
+    }
+}
+  ```
 
 ### Contributions
 
