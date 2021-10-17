@@ -51,6 +51,30 @@ allprojects {
     }
 }
   ```
+  #### 4. Set `setTabPageLayer`, `setPageDetailData`, and `setPageEnds`
+  ```js
+  public class MainActivity extends TabPageLayer {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        // Set All Fragments
+        Fragment[] fragments = {new PageOneFragment(), new PageTwoFragment(), new PageThreeFragment()};
+        
+        // Set countData, id tablayout, id viewpager, and fragments
+        setTabPageLayer(9, R.id.tabHome, R.id.viewPager, fragments);
+        
+        // Set name class to show data register
+        setPageDetailData(DataRegisterActivity.class);
+        
+        // Set page end
+        setPageEnds(fragments.length);
+
+    }
+}
+  ```
 
 ### Contributions
 
