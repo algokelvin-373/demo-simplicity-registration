@@ -75,6 +75,70 @@ allprojects {
     }
 }
   ```
+  #### 5. Extends Class `RegisterController` in all your fragment
+  ```js
+  public class PageOneFragment extends RegisterController {
+
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.fragment_page_one, container, false);
+    }
+
+    @Override
+    public void onViewCreated(@NonNull @NotNull View view, @Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        ....
+
+    }
+}
+  ```
+  #### 6. Set `setSizes`, `setUIRegister`, and `setBtnNext` for fragment AND Set xml linear layout
+  _PageOneFragment_
+  ```js
+  @Override
+    public void onViewCreated(@NonNull @NotNull View view, @Nullable @org.jetbrains.annotations.Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
+
+        // Set Title Text Input Data
+        String[] text = {"Nama Lengkap", "Nama Panggilan", "Tempat Lahir"};
+        
+        // Set Hint EditText
+        String[] edtHint = {"Nama Lengkap", "Nama Panggilan", "Tempat Lahir"};
+        
+        setSizes(text.length); // Set Amount Input Data
+        
+        // Set parameter view, array title input data, and array hint text
+        setUIRegister(view, text, edtHint, R.id.cl_register_1);
+        
+        setBtnNext(R.id.btn_next); // Set id Button Next
+
+    }
+  ```
+  _fragment_page_one.xml_
+  ```xml
+  <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        ....
+
+        <LinearLayout
+            android:id="@+id/cl_register_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_fragment_one" />
+            
+        ...    
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+  ```
 
 ### Contributions
 
